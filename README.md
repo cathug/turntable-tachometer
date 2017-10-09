@@ -4,6 +4,7 @@
 This respository contains all required files for the IR-sensor-based turntable 
 tachometer.
 
+![Breadboard](https://github.com/cathug/turntable-tachometer/blob/master/tachometer.png)
 
 ---
 ## Why reinvent the wheel?
@@ -27,6 +28,7 @@ only performs LCD display tasks.
 * Arduino ATMega328 based controller - I am using Arduino Duemilanove
 * Nokia 5110 LCD display
 * Custom IR module - *see schematics below for more details*
+* 5V to 3V Level-shifter for LCD display (I am using two 74VHCU04s)
 
 The code is written for **ATMega328-based Arduinos** in mind.  Slight
 modifications are required before compiling the source code for other Arduinos.
@@ -34,7 +36,7 @@ modifications are required before compiling the source code for other Arduinos.
 ---
 ## Custom IR module
 ![Schematic](https://github.com/cathug/turntable-tachometer/blob/master/ir-schematic.png)
-The parts were choosen as they are what I have at home.  The dual opamp NJM4556 
+The parts are choosen as they are what I have at home.  The dual opamp NJM4560 
 serves as a LED driver and comparator for the Omron EE-SF5 IR sensor.  You can
 also use one of those pre-built Chinese IR-modules instead and I recommend that
 in retrospect.
